@@ -1,4 +1,4 @@
-# Building an iMessage Extension
+# IceCreamBuilder: Building an iMessage Extension
 
 Allow users to collaborate on the design of ice cream sundae stickers.
 
