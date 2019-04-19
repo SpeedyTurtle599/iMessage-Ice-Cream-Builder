@@ -38,11 +38,11 @@ class MessagesViewController: MSMessagesAppViewController {
     
     // MARK: Child view controller presentation
     
+    /// - Tag: PresentViewController
     private func presentViewController(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
         // Remove any child view controllers that have been presented.
         removeAllChildViewControllers()
         
-        /// - Tag: PresentViewController
         let controller: UIViewController
         if presentationStyle == .compact {
             // Show a list of previously created ice creams.
@@ -59,7 +59,7 @@ class MessagesViewController: MSMessagesAppViewController {
             }
         }
 
-        addChildViewController(controller)
+        addChild(controller)
         controller.view.frame = view.bounds
         controller.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(controller.view)
@@ -71,7 +71,7 @@ class MessagesViewController: MSMessagesAppViewController {
             controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ])
         
-        controller.didMove(toParentViewController: self)
+        controller.didMove(toParent: self)
     }
     
     private func instantiateIceCreamsController() -> UIViewController {
@@ -109,10 +109,10 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: Convenience
     
     private func removeAllChildViewControllers() {
-        for child in childViewControllers {
-            child.willMove(toParentViewController: nil)
+        for child in children {
+            child.willMove(toParent: nil)
             child.view.removeFromSuperview()
-            child.removeFromParentViewController()
+            child.removeFromParent()
         }
     }
     
@@ -146,6 +146,7 @@ extension MessagesViewController: IceCreamsViewControllerDelegate {
 
 extension MessagesViewController: BuildIceCreamViewControllerDelegate {
 
+    /// - Tag: InsertMessageInConversation
     func buildIceCreamViewController(_ controller: BuildIceCreamViewController, didSelect iceCreamPart: IceCreamPart) {
         guard let conversation = activeConversation else { fatalError("Expected a conversation") }
         guard var iceCream = controller.iceCream else { fatalError("Expected the controller to be displaying an ice cream") }
@@ -168,7 +169,6 @@ extension MessagesViewController: BuildIceCreamViewControllerDelegate {
         // Create a new message with the same session as any currently selected message.
         let message = composeMessage(with: iceCream, caption: messageCaption, session: conversation.selectedMessage?.session)
 
-        /// - Tag: InsertMessageInConversation
         // Add the message to the conversation.
         conversation.insert(message) { error in
             if let error = error {

@@ -65,7 +65,7 @@ class BuildIceCreamViewController: UIViewController {
         iceCreamView.iceCream = iceCream
         
         // We want the collection view to decelerate faster than normal so comes to rest on a body part more quickly.
-        collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
     }
     
     override func viewDidLayoutSubviews() {

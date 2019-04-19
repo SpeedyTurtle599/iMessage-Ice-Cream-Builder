@@ -85,8 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		74408F1074408F6000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
-		74543F907453B8C000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		08CC2E0008CD11C000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		08E8755008E8004000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		B52828A91CD1724C009CD776 /* IceCreamBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52828AC1CD1724C009CD776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52828AE1CD1724C009CD776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,19 +163,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		744089907440853000000001 /* LICENSE */ = {
+		08CC2A5008CC2CC000000001 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				74408F1074408F6000000001 /* LICENSE.txt */,
+				08CC2E0008CD11C000000001 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
-		7450B7E07450B5F000000001 /* Configuration */ = {
+		08E8681008E8696000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				74543F907453B8C000000001 /* SampleCode.xcconfig */,
+				08E8755008E8004000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 				B55F96261CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */,
 				B52828C31CD17260009CD776 /* Frameworks */,
 				B52828AA1CD1724C009CD776 /* Products */,
-				7450B7E07450B5F000000001 /* Configuration */,
-				744089907440853000000001 /* LICENSE */,
+				08E8681008E8696000000001 /* Configuration */,
+				08CC2A5008CC2CC000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,7 +326,7 @@
 				B52828A61CD1724C009CD776 /* Frameworks */,
 				B52828A71CD1724C009CD776 /* Resources */,
 				B52828D51CD17260009CD776 /* Embed App Extensions */,
-				55E656D220AB1BCE0062EBA0,
+				D1D12BB0D1D127A000000001,
 			);
 			buildRules = (
 			);
@@ -345,6 +345,7 @@
 				B55F96201CFF829D00B33E33 /* Sources */,
 				B55F96211CFF829D00B33E33 /* Frameworks */,
 				B55F96221CFF829D00B33E33 /* Resources */,
+				D1D13D30D1D13BE000000001,
 			);
 			buildRules = (
 			);
@@ -362,24 +363,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					B52828A81CD1724C009CD776 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					B55F96231CFF829D00B33E33 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = B52828A41CD1724C009CD776 /* Build configuration list for PBXProject "IceCreamBuilder" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -517,7 +518,7 @@
 /* Begin XCBuildConfiguration section */
 		B52828B91CD1724C009CD776 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = lossless;
@@ -576,7 +577,7 @@
 		};
 		B52828BA1CD1724C009CD776 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
@@ -628,7 +629,7 @@
 		};
 		B52828BC1CD1724C009CD776 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -638,13 +639,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.IceCreamBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		B52828BD1CD1724C009CD776 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -654,13 +655,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.IceCreamBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		B55F96331CFF829D00B33E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -671,13 +672,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		B55F96341CFF829D00B33E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74543F907453B8C000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -688,7 +689,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

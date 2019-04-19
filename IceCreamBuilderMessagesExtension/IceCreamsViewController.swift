@@ -77,8 +77,7 @@ class IceCreamsViewController: UICollectionViewController {
     // MARK: Convenience
     
     private func dequeueIceCreamCell(for iceCream: IceCream, at indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: IceCreamCell.reuseIdentifier,
-                                                             for: indexPath) as? IceCreamCell
+        guard let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: IceCreamCell.reuseIdentifier, for: indexPath) as? IceCreamCell
             else { fatalError("Unable to dequeue am IceCreamCell") }
         
         cell.representedIceCream = iceCream

@@ -71,7 +71,7 @@ class IceCreamStickerCache {
             guard !fileManager.fileExists(atPath: url.absoluteString) else { return }
             
             // Create the sticker image and write it to disk.
-            guard let image = iceCream.renderSticker(opaque: false), let imageData = UIImagePNGRepresentation(image)
+            guard let image = iceCream.renderSticker(opaque: false), let imageData = image.pngData()
                 else { fatalError("Unable to build image for ice cream") }
             
             do {
