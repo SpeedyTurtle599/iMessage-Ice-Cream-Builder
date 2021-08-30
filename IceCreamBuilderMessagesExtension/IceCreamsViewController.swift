@@ -108,7 +108,7 @@ class IceCreamsViewController: UICollectionViewController {
 
 // A delegate protocol for the `IceCreamsViewController` class
 
-protocol IceCreamsViewControllerDelegate: class {
+protocol IceCreamsViewControllerDelegate: AnyObject {
 
     /// Called when a user choses to add a new `IceCream` in the `IceCreamsViewController`.
 

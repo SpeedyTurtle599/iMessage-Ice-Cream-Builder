@@ -122,7 +122,7 @@ class BuildIceCreamViewController: UIViewController {
 
 /// A delegate protocol for the `BuildIceCreamViewController` class.
 
-protocol BuildIceCreamViewControllerDelegate: class {
+protocol BuildIceCreamViewControllerDelegate: AnyObject {
 
     /// Called when the user taps to select an `IceCreamPart` in the `BuildIceCreamViewController`.
 

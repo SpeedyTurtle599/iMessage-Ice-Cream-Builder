@@ -85,8 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08CC2E0008CD11C000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
-		08E8755008E8004000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		99B09C10CF47ED1833322620 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		B52828A91CD1724C009CD776 /* IceCreamBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52828AC1CD1724C009CD776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52828AE1CD1724C009CD776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +141,7 @@
 		B5E0A5661D01079C006A77D2 /* topping10_sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topping10_sticker.png; sourceTree = "<group>"; };
 		B5E0A5671D01079C006A77D2 /* topping11_sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topping11_sticker.png; sourceTree = "<group>"; };
 		B5E0A5681D01079C006A77D2 /* topping12_sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topping12_sticker.png; sourceTree = "<group>"; };
+		E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,19 +163,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08CC2A5008CC2CC000000001 /* LICENSE */ = {
+		79C5A4EFB9BB4C31D9D12841 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				08CC2E0008CD11C000000001 /* LICENSE.txt */,
+				99B09C10CF47ED1833322620 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
-		08E8681008E8696000000001 /* Configuration */ = {
+		A48773DCBF3B803EA834F806 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				08E8755008E8004000000001 /* SampleCode.xcconfig */,
+				E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 				B55F96261CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */,
 				B52828C31CD17260009CD776 /* Frameworks */,
 				B52828AA1CD1724C009CD776 /* Products */,
-				08E8681008E8696000000001 /* Configuration */,
-				08CC2A5008CC2CC000000001 /* LICENSE */,
+				A48773DCBF3B803EA834F806 /* Configuration */,
+				79C5A4EFB9BB4C31D9D12841 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,7 +326,6 @@
 				B52828A61CD1724C009CD776 /* Frameworks */,
 				B52828A71CD1724C009CD776 /* Resources */,
 				B52828D51CD17260009CD776 /* Embed App Extensions */,
-				D1D12BB0D1D127A000000001,
 			);
 			buildRules = (
 			);
@@ -345,7 +344,6 @@
 				B55F96201CFF829D00B33E33 /* Sources */,
 				B55F96211CFF829D00B33E33 /* Frameworks */,
 				B55F96221CFF829D00B33E33 /* Resources */,
-				D1D13D30D1D13BE000000001,
 			);
 			buildRules = (
 			);
@@ -363,16 +361,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					B52828A81CD1724C009CD776 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A93A5CM278;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					B55F96231CFF829D00B33E33 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A93A5CM278;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -518,7 +518,7 @@
 /* Begin XCBuildConfiguration section */
 		B52828B91CD1724C009CD776 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = lossless;
@@ -541,6 +541,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -565,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -577,7 +578,7 @@
 		};
 		B52828BA1CD1724C009CD776 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
@@ -600,6 +601,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -618,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -629,7 +631,7 @@
 		};
 		B52828BC1CD1724C009CD776 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -645,7 +647,7 @@
 		};
 		B52828BD1CD1724C009CD776 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -661,7 +663,7 @@
 		};
 		B55F96331CFF829D00B33E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -678,7 +680,7 @@
 		};
 		B55F96341CFF829D00B33E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08E8755008E8004000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E05100B0168840E6BFDCC3ED /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
