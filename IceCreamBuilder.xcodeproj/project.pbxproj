@@ -169,7 +169,7 @@
 				99B09C10CF47ED1833322620 /* LICENSE.txt */,
 			);
 			name = LICENSE;
-			path = LICENSE;
+			path = .;
 			sourceTree = "<group>";
 		};
 		A48773DCBF3B803EA834F806 /* Configuration */ = {
